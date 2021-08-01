@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Post</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='blog.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box1 font1">
+            <div class="left">
+          <div>
+              <h2 class="font1">Blog-Post</h2>
+          </div> 
+          <ul id="bars">
+              <li><a href="/front">Home</a></li>
+              <li><a href="/addcontent">Add Content</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+          </ul> 
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search" class="font2">
+            <button class="btn font2 ">Search</button>
+        </div>
+    </div>
+    <div class="imagebox">
+        
+        
+        
+        <!-- <img class="img" src="https://i.pinimg.com/236x/21/e1/cf/21e1cfbafc0585695665823768f6a313.jpg" alt=""> --> 
+        <div class="img"></div>
+           
+       
+    </div>
+    <div class="box2">
+        <div class="aboutus">
+            <h1 class="font1">It is a Blog page.</h1>
+            <h3 class="font2">
+                Here you can post your blog Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab veritatis esse illum sed odio. Numquam molestiae, praesentium harum natus neque tempora quis perferendis adipisci recusandae, assumenda similique sequi cum.
+            </h3>
+        </div>
+    </div>
+    <div class="add" style="height:600px">
+        <h1 class="font1">Enter content</h1>
+        <form action="/addcontent" method="POST">
+
+            <div>
+                <input type="text" placeholder="Topic of the Blog" name="topic" class="font2" style="border-radius:6px; font-size: 20px;">
+                
+            </div>
+       <div>
+           <input type="text" placeholder="Name of the Author" name="author" class="font2" style="border-radius:6px; font-size: 20px;">
+           
+        </div>
+       <div>
+           <input type="text" placeholder="Add Slug" name="slug" class="font2" style="border-radius:6px; font-size: 20px;">
+           
+        </div>
+        <div>
+            
+            <input type="text" placeholder="Write your Blog" name="blog" class="details font2">
+        </div>
+        <button class="btn font2">Submit</button>
+    </form>
+    </div>
+    
+    <div class="box4 font3 ">
+        <h3>created by Rupin</h3>
+        <!-- <button><a href="darkmode.html">dark mode</a></button> -->
+    </div>
+    
+</body>
+</html>
+       
+    

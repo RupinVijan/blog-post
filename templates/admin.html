@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page Login</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+        }
+        #forum{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        .inp1{
+            font-size: 20px;
+            margin: 2px;
+            /* height:30px; */
+            width:300px;
+        }
+        .inp2{
+            margin-top: 10px;
+        }
+        .btn{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Blog-Post Page</h1>
+    <h1>Created by Rupin Vijan </h1>
+    <div id="forum">
+        <form action="" method="POST">
+            <h3>Admin-Login</h3><hr>
+            <div>
+                <input type="text" name="user" placeholder="Username" class="inp1"><br>
+                <input type="password" name="pass" placeholder="Password" class="inp1">
+            </div>
+            <div class="inp2">
+                <input type="checkbox" name="Remeber Me" id="" value="Remember me">Remeber me
+            </div>
+            <div>
+                <button class="btn" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
